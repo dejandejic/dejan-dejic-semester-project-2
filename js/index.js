@@ -35,18 +35,6 @@ window.onscroll = () =>{
     menu.classList.remove("fa-times");
     navbar.classList.remove('active');
 }
-
+*/3
 // Cart
 
-let cartIcon = document.querySelector("#cart-icon");
-let cart = document.querySelector(".cart");
-let closeCart = document.querySelector("#close-cart");
-
-cartIcon.onclick = () => {
-  cart.classList.add("active");
-};
-
-closeCart.onclick = () => {
-  cart.classList.remove("active");
-};
-*/
