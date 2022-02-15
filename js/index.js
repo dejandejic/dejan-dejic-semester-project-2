@@ -1,28 +1,25 @@
 import { baseUrl } from "./settings/api.js";
-const productsUrl = baseUrl + "products";
 
-(async function() {
+const homeApiUrl = baseUrl + "/home";
 
-  const container = document.querySelector("hero-banner");
+(async function () {
 
-  try{
-    const response = await fetch (productsUrl);
-    const json = await response.json();
-    console.log(products);
+  const heroBanner = document.querySelector(".hero-banner");
 
-    products.forEach(function (data) {
-      container.innerHTML += `<img>${data.hero_banner}</img>
-                              <img>${data.thumbnail}</img>`;
-    });
-    
-    console.log(json);
-  } catch(error) {
+  try {
+    const response = await fetch(homeApiUrl);
+    const data = await response.json();
+
+    if (heroBanner) {
+      heroBanner.innerHTML += `<img src="${baseUrl + data.hero_banner.formats.large.url}" />`;
+    }
+  } catch (error) {
     console.log(error);
   }
 
 })();
-
 /*
+
 let menu = document.querySelector("#hamburger");
 let navbar = document.querySelector(".navbar");
 
@@ -35,6 +32,6 @@ window.onscroll = () =>{
     menu.classList.remove("fa-times");
     navbar.classList.remove('active');
 }
-*/3
+*/
 // Cart
 

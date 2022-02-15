@@ -29,10 +29,11 @@ header .navbar a {
   color: rgb(255, 255, 255);
   font-family: "Courier", monospace;
 }
-
 header .navbar a:hover {
-  color: #546f80;
-  font-size: 20px;
+  text-decoration: underline;
+
+  color: white;
+  margin-bottom: 20px;
 }
 
 header .navbar a,
@@ -41,4 +42,10 @@ header .navbar a,
   text-decoration: none;
   padding: 0.5em 0.8em !important;
   margin: 0.2em 0;
+}
+
+.navbar .form-control {
+  color: black;
+  border-radius: 50px;
+  width: 150px;
 }

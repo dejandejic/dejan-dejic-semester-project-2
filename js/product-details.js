@@ -1,19 +1,5 @@
 import { baseUrl } from "./settings/api.js";
 
-
-let cartIcon = document.querySelector("#cart-icon");
-let cart = document.querySelector(".cart");
-let closeCart = document.querySelector("#close-cart");
-
-cartIcon.onclick = () => {
-  cart.classList.add("active");
-};
-
-closeCart.onclick = () => {
-  cart.classList.remove("active");
-};
-
-
 const productsApiUrl = baseUrl + "/products";
 
 (async function () {
@@ -30,6 +16,7 @@ const productsApiUrl = baseUrl + "/products";
         container.innerHTML += `<div class="product-box">
                               <img src="${baseUrl + data.image.url}" alt="" class="product-img">
                               <h2 class="product-title">${data.title}</h2>
+                              <p>${data.description}</p>
                               <span class="price"> $ ${data.price}</span>
                               <i class="fas fa-shopping-cart"></i>
                             </div>`;

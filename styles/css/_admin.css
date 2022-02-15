@@ -8,15 +8,15 @@ main {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: linear-gradient(-45deg, rgb(24, 69, 97), rgb(79, 156, 215));
+  background: rgb(255, 255, 255);
 }
 .container-admin {
   position: relative;
   width: 700px;
   height: 700px;
-  background: linear-gradient(-45deg, rgb(29, 168, 199), rgb(255, 255, 255));
+  background: linear-gradient(-45deg, rgb(45, 53, 55), rgb(255, 255, 255));
   border-radius: 15px;
-  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.3), 0 5px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2), 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
 .sign-in {
