@@ -49,3 +49,34 @@ header .navbar a,
   border-radius: 50px;
   width: 150px;
 }
+
+#hamburger {
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  display: none;
+}
+@media (max-width: 768px) {
+  #hamburger {
+    display: initial;
+    color: white;
+  }
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  header .navbar a {
+    margin: 1.5rem;
+    padding: 1.5rem;
+    display: block;
+    border: 0.2rem solid rgb(0, 0, 0, 0.1);
+    border-left: 0.5rem solid blue;
+    background: white;
+  }
+}

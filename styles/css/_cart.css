@@ -8,10 +8,15 @@
   padding: 10px;
   cursor: pointer;
 }
+.cart_added .fa-shopping-cart {
+  background: red;
+}
 .fa-shopping-cart:hover {
   background: hsl(147, 32%, 27%);
 }
-
+.cart_added .fa-shopping-cart:hover {
+  background: hsl(51, 92%, 41%);
+}
 .cart {
   position: fixed;
   top: 0;

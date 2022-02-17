@@ -1,3 +1,4 @@
+/*---Hero Banner---*/
 import { baseUrl } from "./settings/api.js";
 
 const homeApiUrl = baseUrl + "/home";
@@ -18,8 +19,8 @@ const homeApiUrl = baseUrl + "/home";
   }
 
 })();
-/*
 
+/*---Hamburger menu---*/
 let menu = document.querySelector("#hamburger");
 let navbar = document.querySelector(".navbar");
 
@@ -32,6 +33,5 @@ window.onscroll = () =>{
     menu.classList.remove("fa-times");
     navbar.classList.remove('active');
 }
-*/
-// Cart
+
 
