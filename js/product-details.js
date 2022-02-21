@@ -1,5 +1,5 @@
 import { baseUrl } from "./settings/api.js";
-import { cartObj, handleAddToCart } from "./cart.js";
+import { cartObj, handleAddToCart } from "./cart_functions.js";
 
 const getProductApiUrl = (id) => baseUrl + `/products/${id}`;
 const url = new URL(window.location.href);

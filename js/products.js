@@ -1,17 +1,17 @@
 import { baseUrl } from "./settings/api.js";
-import { cartObj, handleAddToCart } from "./cart.js";
+import { cartObj, handleAddToCart } from "./cart_functions.js";
 
-let cartIcon = document.querySelector("#cart-icon");
-let cart = document.querySelector(".cart");
-let closeCart = document.querySelector("#close-cart");
+// let cartIcon = document.querySelector("#cart-icon");
+// let cart = document.querySelector(".cart");
+// let closeCart = document.querySelector("#close-cart");
 
-cartIcon.onclick = () => {
-  cart.classList.add("active");
-};
+// cartIcon.onclick = () => {
+//   cart.classList.add("active");
+// };
 
-closeCart.onclick = () => {
-  cart.classList.remove("active");
-};
+// closeCart.onclick = () => {
+//   cart.classList.remove("active");
+// };
 
 
 const productsApiUrl = baseUrl + "/products";
@@ -45,7 +45,7 @@ const productsApiUrl = baseUrl + "/products";
           item.addEventListener('click', event => {
             const id = item.getAttribute('data-id');
             const data = json.filter((p) => p.id == id);
-            handleAddToCart(id, item, data);
+            handleAddToCart(id, item, data[0]);
           });
         });
       }
