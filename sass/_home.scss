@@ -3,17 +3,15 @@
   color: black;
   border-color: black;
   border-radius: 50px;
-}
-.btn:hover {
-  background-color: #aed3e2;
-  color: black;
+
+  &:hover {
+    background-color: #aed3e2;
+    color: black;
+  }
 }
 
 body {
   background-color: rgb(152, 144, 144);
-}
-
-body {
   background: white;
 }
 
@@ -28,16 +26,13 @@ body {
   width: 100%;
   padding: 2rem;
 }
+
 .carousel-item img {
   height: 500px;
   object-fit: cover;
 }
 
-.welcome-text {
-  display: block;
-  text-align: center;
-}
-.welcome-2 {
+.welcome-text, .welcome-2 {
   display: block;
   text-align: center;
 }
@@ -51,10 +46,12 @@ body {
   margin-bottom: 20px;
   animation: text 3s 1;
 }
+
 .welcome-2 {
   font-size: 25px;
   color: rgb(0, 0, 0);
 }
+
 .letter {
   color: rgb(255, 145, 0);
   font-family: "Great Vibes", cursive;
@@ -65,6 +62,7 @@ body {
     color: rgb(216, 28, 28);
     margin-bottom: -40px;
   }
+
   30% {
     letter-spacing: 25px;
     margin-bottom: -40px;
