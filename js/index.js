@@ -1,5 +1,7 @@
 /*---Hero Banner---*/
 import { baseUrl } from "./settings/api.js";
+import "./common.js";
+import { jwt, userData } from "./auth.js";
 import { cartObj, handleAddToCart } from "./cart_functions.js";
 
 const homeApiUrl = baseUrl + "/home";
@@ -71,16 +73,4 @@ const getFeaturedProducts = async () => {
 getHome();
 getFeaturedProducts();
 
-/*---Hamburger menu---*/
-let menu = document.querySelector("#hamburger");
-let navbar = document.querySelector(".navbar");
 
-menu.onclick = () => {
-  menu.classList.toggle("fa-times");
-  navbar.classList.toggle('active');
-}
-
-window.onscroll = () => {
-  menu.classList.remove("fa-times");
-  navbar.classList.remove('active');
-}

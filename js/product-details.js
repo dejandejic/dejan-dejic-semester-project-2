@@ -1,4 +1,5 @@
 import { baseUrl } from "./settings/api.js";
+import "./common.js";
 import { cartObj, handleAddToCart } from "./cart_functions.js";
 
 const getProductApiUrl = (id) => baseUrl + `/products/${id}`;

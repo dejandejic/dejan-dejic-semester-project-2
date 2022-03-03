@@ -1,4 +1,5 @@
 import { baseUrl } from "./settings/api.js";
+import "./common.js";
 import { cartObj, handleRemoveFromCart } from "./cart_functions.js";
 
 const getCartProducts = async () => {
@@ -13,6 +14,8 @@ const getCartProducts = async () => {
         let product_key_list = Object.keys(cartObj);
         if (product_key_list.length === 0) {
           container.innerHTML = '<div style="text-align:center;">No Product added</div>';
+          document.querySelector('.total_count').innerHTML = 0;
+          document.querySelector('#total_price').innerHTML = "";
           return;
         }
         let totalPrice = 0;
