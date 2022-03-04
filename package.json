@@ -1,0 +1,33 @@
+{
+  "name": "Dejan dejic semester",
+  "version": "1.0.0",
+  "description": "Dejan dejic semester",
+  "author": "Dej",
+  "license": "GPL-2.0-or-later",
+  "keywords": [],
+  "devDependencies": {
+    "rtlcss": "^3.5.0",
+    "sass": "^1.43.4"
+  },
+  "rtlcssConfig": {
+    "options": {
+      "autoRename": false,
+      "autoRenameStrict": false,
+      "blacklist": {},
+      "clean": true,
+      "greedy": false,
+      "processUrls": false,
+      "stringMap": []
+    },
+    "plugins": [],
+    "map": false
+  },
+  "scripts": {
+    "start": "sass --style=compressed --watch sass/style.scss:css/style.css"
+  },
+  "eslintConfig": {
+    "rules": {
+      "no-var": 0
+    }
+  }
+}

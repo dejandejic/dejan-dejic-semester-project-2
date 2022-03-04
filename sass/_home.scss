@@ -1,18 +1,18 @@
 .btn {
-  background: white;
-  color: black;
-  border-color: black;
+  background: $sedoncardy-color;
+  color: $primary-color;
+  border-color: $primary-color;
   border-radius: 50px;
 
   &:hover {
     background-color: #aed3e2;
-    color: black;
+    color: $primary-color;
   }
 }
 
 body {
   background-color: rgb(152, 144, 144);
-  background: white;
+  background: $sedoncardy-color;
 }
 
 .hero-banner img {
@@ -50,11 +50,11 @@ body {
 
 .welcome-2 {
   font-size: 25px;
-  color: rgb(0, 0, 0);
+  color: $primary-color;
 }
 
 .letter {
-  color: rgb(255, 145, 0);
+  color: $hover-nav;
   font-family: "Great Vibes", cursive;
 }
 
