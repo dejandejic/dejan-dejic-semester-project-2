@@ -22,16 +22,6 @@ body {
   padding: 2rem;
 }
 
-#carouselExampleCaptions {
-  width: 100%;
-  padding: 2rem;
-}
-
-.carousel-item img {
-  height: 500px;
-  object-fit: cover;
-}
-
 .welcome-text,
 .welcome-2 {
   display: block;
@@ -60,7 +50,7 @@ body {
 
 @keyframes text {
   0% {
-    color: rgb(216, 28, 28);
+    color: $hover-nav;
     margin-bottom: -40px;
   }
 
