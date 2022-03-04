@@ -61,7 +61,7 @@ export class FormValidator {
       }
     }
 
-    // Password confirmation edge case
+    // Password confirmation 
     if (field.id === "password_confirmation") {
       const passwordField = this.form.querySelector('#password')
 
@@ -76,25 +76,19 @@ export class FormValidator {
   }
 
   setStatus(field, message, status, param, val) {
-    // const successIcon = field.parentElement.querySelector('.icon-success')
-    // const errorIcon = field.parentElement.querySelector('.icon-error')
     const errorMessage = field.parentElement.querySelector('.error-message')
 
     if (status === "success") {
-      // if (errorIcon) { errorIcon.classList.add('hidden') }
       if(param){
         this.params[param] = val;
       }
       if (errorMessage) { errorMessage.innerText = "" }
-      // successIcon.classList.remove('hidden')
       field.classList.remove('input-error');
       this.isError = false;
     }
 
     if (status === "error") {
-      // if (successIcon) { successIcon.classList.add('hidden') }
       field.parentElement.querySelector('.error-message').innerText = message
-      // errorIcon.classList.remove('hidden')
       field.classList.add('input-error');
       this.isError = true;
     }

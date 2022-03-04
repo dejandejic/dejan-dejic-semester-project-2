@@ -2,19 +2,6 @@ import { baseUrl } from "./settings/api.js";
 import "./common.js";
 import { cartObj, handleAddToCart } from "./cart_functions.js";
 
-// let cartIcon = document.querySelector("#cart-icon");
-// let cart = document.querySelector(".cart");
-// let closeCart = document.querySelector("#close-cart");
-
-// cartIcon.onclick = () => {
-//   cart.classList.add("active");
-// };
-
-// closeCart.onclick = () => {
-//   cart.classList.remove("active");
-// };
-
-
 const productsApiUrl = baseUrl + "/products";
 
 (async function () {
